@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: fasttext-predict
+Version: 0.9.2.4
+Summary: fasttext with wheels and no external dependency, but only the predict method (<1MB)
+Home-page: https://github.com/searxng/fasttext-predict/
+Author: Alexandre Flament
+Author-email: alex.andre@al-f.net
+License: MIT
+Keywords: fasttext,language detection,language identification
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+License-File: LICENSE
+
+fasttext-predict
+================
+
+Python package for
+`fasttext <https://github.com/facebookresearch/fastText>`__:
+
+-  keep only the ``predict`` method, all other features are removed
+-  standalone package without external dependency (numpy is not a
+   dependency)
+-  wheels for various architectures using GitHub workflows. The script
+   is inspired by lxml build scripts.
+
+Usage
+-----
+
+.. code:: sh
+
+   pip install fasttext-predict
+
+.. code:: python
+
+   import fasttext
+   model = fasttext.load_model('lid.176.ftz')
+   result = model.predict('Fondant au chocolat et tarte aux myrtilles')
+
+See https://fasttext.cc/docs/en/language-identification.html

@@ -1,0 +1,5 @@
+VERSION_STRING = "2025.04.24"
+VERSION_TAG = "v0.1.0"
+DOCKER_TAG = "searx:1.0.0"
+GIT_URL = "https://github.com/mbaozi/SearXNGforWindows"
+GIT_BRANCH = "main"
