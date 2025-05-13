@@ -40,18 +40,31 @@ http://127.0.0.1:8888
 
 
 
+### 代理配置
+
+配置文件 config/settings.yml， 找到 outgoing 部分配置，参考以下修改
+
+```yaml
+outgoing:
+  proxies: "http://127.0.0.1:7897" # 代理地址，根据实际使用配置
+  request_timeout: 10.0 # 可适当延长超时时间
+  max_retries: 3
+```
+
+
+
 ### 使用本地 python 环境
 
-安装 searx/requirements.txt 中依赖包
+安装 config/requirements.txt 中依赖包
 
 ```bash
-pip install -r searx/requirements.txt
+pip install -r config/requirements.txt
 ```
 
 启动 SearXNG
 
 ```bash
-python ./searx/webapp.py
+python ./python/Lib/site-packages/searx/webapp.py
 ```
 
 访问路径同上
@@ -59,4 +72,6 @@ python ./searx/webapp.py
 为了方便使用，默认禁用了大部分搜索引擎，仅保留了搜狗和百度，启动后可在首选项页面进行修改
 
 > 其他使用事项可参考原仓库 https://github.com/searxng/searxng
+
+
 
