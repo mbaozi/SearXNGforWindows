@@ -18,7 +18,7 @@ SearXNG 可以部署在 Liunx 主机或 Docker 环境，虽基于 python 开发�
 
 **searx**
 
-> 20250513：同步SearXNG仓库，基于*5d99373bc65c7087ee743a1fe44897bad6065338*
+> 20250513：同步 SearXNG仓库，基于 *5d99373bc65c7087ee743a1fe44897bad6065338*
 >
 > 20250424：基于 SearXNG 2025.4.25+9ec9499d8，已修改适配 Windows 环境
 
