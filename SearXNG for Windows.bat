@@ -9,13 +9,13 @@ if not exist ".\python\python.exe" (
     exit /b
 )
 
-if not exist ".\searx\webapp.py" (
+if not exist ".\python\Lib\site-packages\searx\webapp.py" (
     echo Error: webapp.py not found in the specified path.
     pause
     exit /b
 )
 
 :: 启动 Searx
-.\python\python.exe .\searx\webapp.py
+.\python\python.exe .\python\Lib\site-packages\searx\webapp.py
 
 pause
